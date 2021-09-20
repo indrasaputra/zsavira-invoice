@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Zsavira Makeup & Hairdo</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <form action="/invoices" method="POST">
+        <div class="mb-3">
+          <label for="invoice-date" class="form-label">Invoice Date</label>
+          <input type="text" class="form-control" id="invoice-date" name="invoice-date" placeholder="What is date the invoice should be">
+        </div>
+        <div class="mb-3">
+          <label for="invoice-client" class="form-label">Client Name</label>
+          <input type="text" class="form-control" id="invoice-client" name="invoice-client" placeholder="Client's name">
+        </div>
+        <div class="mb-3">
+          <label for="invoice-event-date" class="form-label">Event's date</label>
+          <input type="text" class="form-control" id="invoice-event-date" name="invoice-event-date" placeholder="Event's date">
+        </div>
+        <div class="mb-3">
+          <label for="invoice-event-place" class="form-label">Event's place</label>
+          <input type="text" class="form-control" id="invoice-event-place" name="invoice-event-place" placeholder="Event's place">
+        </div>
+        <div class="mb-3">
+          <label for="invoice-details" class="form-label">Invoice's details</label>
+          <textarea class="form-control" id="invoice-details" rows="4" name="invoice-details"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  </body>
+
+</html>
